@@ -85,7 +85,7 @@
     <!-- Código PHP para verificação de float -->
     <?php
 
-    $a ="teste";
+    $a ="certeza";
     $b = 12.8;
 
     if(is_float($a)) {
