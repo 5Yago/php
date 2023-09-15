@@ -71,6 +71,20 @@
     </ul>
 
     <!-- Criar aqui seu programa PHP -->
+
+        <?php
+        $a = 5;
+
+        if ($a > 1) {
+            echo "True (Simples - 1° Caso).";
+        }
+
+            echo "<br>";
+
+        if ($a > 1) echo "True (Simples 2° - Caso)";
+
+
+        ?>
     
     
     <hr>
@@ -122,6 +136,40 @@
 
     <!-- Criar aqui seu programa PHP -->
 
+
+        <?php
+        $produtos = "Ultrabook ASUS";
+        $estoque_atual = 0;
+        $estoque_minimo = 14;
+
+        echo "<h3>$produtos</h3>";
+
+        if ($estoque_atual < $estoque_minimo)
+        {
+        echo "<p class='repor'>É necessário comprar.</p>";
+
+        echo "<p class= 'repor'>URGENTE! </p>";
+        
+        } else {
+
+            echo "<p class='ok'>Estoque OK!</p>";
+        }
+
+                echo "<style>
+        .repor {
+            color: red;
+            font-weight: bold;
+        }
+        .ok {
+            color: green;
+            font-weight: bold;
+        }
+        </style>";
+
+
+
+        ?>
+
     
     <hr>
 
@@ -168,6 +216,35 @@
     <hr>
     
     <!-- Criar aqui seu programa PHP -->
+
+            <?php
+        // Esfiha
+        // Pastel
+        // Pizza
+        // Opção inválida
+
+
+        
+
+        // Criar uma variável para receber uma das opções da lista. Iniciar com uma delas.
+        $opcao = "3";
+
+        // Montar uma estrutura encadeada que verifique qual a opção escolhida
+        if ($opcao == "1") {
+            // Exibir o nome do produto pedido conforme a opção escolhida na variável.
+            echo "Você pediu uma Esfiha.";
+        } elseif ($opcao == "2") {
+            // Exibir o nome do produto pedido conforme a opção escolhida na variável.
+            echo "Você pediu um Pastel.";
+        } elseif ($opcao == "3") {
+            // Exibir o nome do produto pedido conforme a opção escolhida na variável.
+            echo "Você pediu uma Pizza.";
+        } else {
+            // Exibir o nome do produto pedido conforme a opção escolhida na variável.
+            echo "Opção inválida.";
+        }
+        ?>
+
     
     <hr>
 
@@ -202,6 +279,23 @@
     <hr>
 
     <!-- Criar aqui seu programa PHP -->
+
+    <?php
+$valor = 1;
+
+switch ($valor) {
+    case 1:
+        echo "A escolha é Pastel"; 
+        break;
+    case 2:
+        echo "A escolha é Esfiha"; 
+        break;
+    case 3:
+        echo "A escolha é Pizza";
+        break;
+
+}
+?>
     
     
     <!-- Rodapé -->
